@@ -22,7 +22,11 @@ public class DemoController {
 	@ResponseBody
 	@RequestMapping("/")
 	public String hh() {
-		logger.info("hhhhhh");
+		logger.info("info");
+		logger.warn("warn");
+		logger.error("error");
+		logger.fatal("fatal");
+
 		Integer result = testDao.findCount();
 		logger.info(result);
 		// List<String> tables = testDao.findTableName();

@@ -1,0 +1,88 @@
+package com.example.dubbo.vo;
+
+import java.io.Serializable;
+import java.util.Date;
+
+/**
+ * 城市实体类
+ * 
+ * Created by bysocket on 07/02/2017.
+ */
+public class CityVo implements Serializable {
+
+	private static final long serialVersionUID = -1L;
+
+	/**
+	 * 城市编号
+	 */
+	private Long id;
+
+	/**
+	 * 省份编号
+	 */
+	private Long provinceId;
+
+	/**
+	 * 城市名称
+	 */
+	private String cityName;
+
+	/**
+	 * 描述
+	 */
+	private String description;
+
+	private Date time;
+
+	public Date getTime() {
+		return time;
+	}
+
+	public void setTime(Date time) {
+		this.time = time;
+	}
+
+	public CityVo() {
+	}
+
+	public CityVo(Long id, Long provinceId, String cityName,
+			String description, Date time) {
+		this.id = id;
+		this.provinceId = provinceId;
+		this.cityName = cityName;
+		this.description = description;
+		this.time = time;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Long getProvinceId() {
+		return provinceId;
+	}
+
+	public void setProvinceId(Long provinceId) {
+		this.provinceId = provinceId;
+	}
+
+	public String getCityName() {
+		return cityName;
+	}
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+}
