@@ -2,7 +2,8 @@ package com.yangle.web.controller;
 
 import javax.annotation.Resource;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,7 @@ import com.yangle.web.service.DemoWebService;
 @Controller
 public class DemoController {
 
-	private Logger logger = Logger.getLogger(DemoController.class);
+	private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
 
 	@Resource
 	private DemoWebService demoWebService;
@@ -28,10 +29,10 @@ public class DemoController {
 	@ResponseBody
 	@RequestMapping("/")
 	public String hh() {
+		logger.debug("debug");
 		logger.info("info");
 		logger.warn("warn");
 		logger.error("error");
-		logger.fatal("fatal");
 		Integer i = demoWebService.getCount(1);
 		return "hhhhhhhhhhh:" + i + " " + conf1.getName();
 	}

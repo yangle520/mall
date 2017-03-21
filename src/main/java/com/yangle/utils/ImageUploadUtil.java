@@ -2,7 +2,8 @@ package com.yangle.utils;
 
 import java.io.File;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSONObject;
 import com.qiniu.common.QiniuException;
@@ -11,7 +12,7 @@ import com.qiniu.storage.UploadManager;
 import com.qiniu.util.Auth;
 
 public class ImageUploadUtil {
-	private Logger logger = Logger.getLogger(this.getClass());
+	private static final Logger logger = LoggerFactory.getLogger(ImageUploadUtil.class);
 	private static ImageUploadUtil instance = new ImageUploadUtil();
 	// 设置好账号的ACCESS_KEY和SECRET_KEY
 	private String ACCESS_KEY = "iPiq0DLxs9N44ynMRoMHFVcCxA_qTadzA4WGd0kn";
