@@ -1,4 +1,4 @@
-package com.example.dubbo.api;
+package com.yangle.dubbo.api;
 
 public interface DemoApi {
 

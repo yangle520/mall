@@ -1,11 +1,11 @@
-package com.example.dubbo.api.impl;
+package com.yangle.dubbo.api.impl;
 
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Component;
 
-import com.example.dubbo.api.DemoApi;
-import com.example.dubbo.service.DemoService;
+import com.yangle.dubbo.api.DemoApi;
+import com.yangle.dubbo.service.DemoService;
 
 @Component
 public class DemoApiImpl implements DemoApi {

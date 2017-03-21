@@ -1,4 +1,4 @@
-package com.example.exception;
+package com.yangle.exception;
 
 /**
  * 统一错误码异常

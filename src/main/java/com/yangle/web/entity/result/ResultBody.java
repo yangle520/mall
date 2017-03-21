@@ -1,6 +1,6 @@
-package com.example.web.entity.result;
+package com.yangle.web.entity.result;
 
-import com.example.exception.ServiceExceptionEnum;
+import com.yangle.exception.ServiceExceptionEnum;
 
 /**
  * 返回体

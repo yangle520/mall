@@ -1,4 +1,4 @@
-package com.example.dubbo.vo;
+package com.yangle.dubbo.vo;
 
 import java.io.Serializable;
 import java.util.Date;

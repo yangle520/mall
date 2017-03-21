@@ -1,4 +1,4 @@
-package com.example.dubbo.service;
+package com.yangle.dubbo.service;
 
 import org.springframework.stereotype.Service;
 

@@ -1,9 +1,9 @@
-package com.example.web.service;
+package com.yangle.web.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.dubbo.api.DemoApi;
+import com.yangle.dubbo.api.DemoApi;
 
 @Service
 public class DemoWebService {

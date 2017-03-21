@@ -1,18 +1,19 @@
-package com.example.exception;
+package com.yangle.constant;
 
 /**
- * 应用系统级别的错误码
+ * 业务错误码 案例
  * 
  * Created by bysocket on 14/03/2017.
  */
-public enum ServiceExceptionEnum {
-	SUCCESS("0", "success"), NOT_FOUND("-1", "service not found");
+public enum CityError {
+	PARAMS_NO_COMPLETE("000001", "params no complete"), CITY_EXIT("000002",
+			"city exit");
 
 	private String code;
 
 	private String message;
 
-	ServiceExceptionEnum(String code, String message) {
+	CityError(String code, String message) {
 		this.code = code;
 		this.message = message;
 	}

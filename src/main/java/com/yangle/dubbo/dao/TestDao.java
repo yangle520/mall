@@ -1,4 +1,4 @@
-package com.example.dubbo.dao;
+package com.yangle.dubbo.dao;
 
 import java.util.List;
 

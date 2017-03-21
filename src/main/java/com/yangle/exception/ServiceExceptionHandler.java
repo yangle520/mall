@@ -1,11 +1,11 @@
-package com.example.exception;
+package com.yangle.exception;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.example.web.entity.result.ResultBody;
+import com.yangle.web.entity.result.ResultBody;
 
 /**
  * 统一错误码异常处理

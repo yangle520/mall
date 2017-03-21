@@ -1,4 +1,4 @@
-package com.example.web.controller;
+package com.yangle.web.controller;
 
 import java.util.Date;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.dubbo.vo.CityVo;
-import com.example.exception.ServiceException;
+import com.yangle.dubbo.vo.CityVo;
+import com.yangle.exception.ServiceException;
 
 /**
  * 错误码案例
