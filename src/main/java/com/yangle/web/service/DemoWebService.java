@@ -1,6 +1,7 @@
 package com.yangle.web.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 
 import com.yangle.dubbo.api.DemoApi;
@@ -8,7 +9,7 @@ import com.yangle.dubbo.api.DemoApi;
 @Service
 public class DemoWebService {
 
-	@Autowired
+	@Resource(name = "demoApiImpl")
 	private DemoApi demoApi;
 
 	public Integer getCount(Integer i) {

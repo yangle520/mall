@@ -2,10 +2,10 @@ package com.yangle.dubbo.dao;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
-public interface TestDao {
+@Repository
+public interface DemoDao {
 
 	public Integer findCount();
 

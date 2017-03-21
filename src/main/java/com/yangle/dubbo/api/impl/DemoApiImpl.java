@@ -15,7 +15,7 @@ public class DemoApiImpl implements DemoApi {
 
 	@Override
 	public Integer getCount(Integer i) {
-		// return demoService.getCountResult(i);
 		return null;
 	}
+
 }
