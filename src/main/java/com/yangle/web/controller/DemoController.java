@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.yangle.exception.ServiceException;
 import com.yangle.web.entity.bean.ConfigBean;
 import com.yangle.web.entity.bean.ConfigBean2;
 import com.yangle.web.service.DemoWebService;
@@ -28,12 +29,20 @@ public class DemoController {
 
 	@ResponseBody
 	@RequestMapping("/")
-	public String hh() {
+	public String hh() throws ServiceException {
 		logger.debug("debug");
 		logger.info("info");
 		logger.warn("warn");
 		logger.error("error");
 		Integer i = demoWebService.getCount(1);
+		if (i > 10) {
+			try {
+				int a = 1 / 0;
+			} catch (Exception e) {
+				logger.error(e.getMessage());
+			}
+			throw new ServiceException("1", "aaaaa");
+		}
 		return "hhhhhhhhhhh:" + i + " " + conf1.getName();
 	}
 }

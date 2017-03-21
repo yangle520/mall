@@ -7,7 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.yangle.web.controller.DemoController;
 import com.yangle.web.entity.result.ResultBody;
 
 /**
@@ -18,7 +17,7 @@ import com.yangle.web.entity.result.ResultBody;
 @RestControllerAdvice
 public class ServiceExceptionHandler {
 
-	private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
+	private static final Logger logger = LoggerFactory.getLogger(ServiceExceptionHandler.class);
 
 	@ExceptionHandler(value = ServiceException.class)
 	public ResultBody errorHandlerOverJson(HttpServletRequest request, ServiceException exception) {
